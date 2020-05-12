@@ -1,0 +1,57 @@
+<canvas id="canv" width=800 height=800></canvas>
+
+<h1 id="showScore">Score: 0</h1>
+
+<h1 id="start">Press spacebar to release ball</h1>
+
+<h1 id="gameEnd">You Lose!</h1>
+<button id="restart" onclick="location.reload()">Restart</button>
+<button id="continue" onclick="cont()">Continue</button>
+
+<script src="main.js"></script>
+
+<style>
+    
+    #showScore {
+        position: absolute;
+        top: 100px;
+        left: 860;
+    }
+    #start {
+        display: none;
+        position: absolute;
+        color: red;
+        top: 500px;
+        left: 220px;
+    }
+    #gameEnd {
+        position: absolute;
+        color: red;
+        top: 200px;
+        left: 220px;
+        font-size: 100px;
+        display: none;
+    }
+    #restart {
+        position: absolute;
+        color: black;
+        top: 400px;
+        left: 340px;
+        background-color: red;
+        border: none;
+        width: 150px;
+        height: 50px;
+        display: none;
+    }   
+    #Continue {
+        position: absolute;
+        color: black;
+        top: 460px;
+        left: 340px;
+        background-color: lightgreen;
+        border: none;
+        width: 150px;
+        height: 50px;
+        display: none;
+    }
+</style>
